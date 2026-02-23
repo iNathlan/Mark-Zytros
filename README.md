@@ -11,30 +11,51 @@
 <hr>
 </div>
 
-❖ PREFACE: ACKNOWLEDGMENTS & INSPIRATIONS (THE BEGINNING)
+---
+
+## ❖ PREFACE: ACKNOWLEDGMENTS & INSPIRATIONS (THE BEGINNING)
 
 This project would not be possible without standing on the shoulders of giants. We first extend our deepest gratitude to the immense inspiration drawn from science fiction and pop culture — specifically the genius behind the Iron Man universe and the character Tony Stark — which planted in an entire generation the seed and dream of a perfect symbiosis between the human body and the cybernetic machine, providing the conceptual and visionary blueprint for modern exoskeleton aesthetics and functionality.
 
-Our most profound reverence to real, disruptive historical figures such as Nikola Tesla, whose pioneering visions of free energy, ambient electromagnetic harvesting, atmospheric electricity, and wireless transmission continue to directly inspire and form the theoretical basis for the intelligent energy matrix and harvesting modules designed for this suit.
+Our most profound reverence to real, disruptive historical figures such as **Nikola Tesla**, whose pioneering visions of free energy, ambient electromagnetic harvesting, atmospheric electricity, and wireless transmission continue to directly inspire and form the theoretical basis for the intelligent energy matrix and harvesting modules designed for this suit.
 
-Collaborative Effort: This project is a joint venture between the hardware engineering team (Ellie) and the software architecture division, aiming to synchronize physical mechanics with intelligent operating systems. Thanks to the collaborative spirit between the hardware builder and the software architecture team for the joint development of the operating system.
+**Collaborative Effort:** This project is a joint venture between the hardware engineering team (Ellie) and the software architecture division, aiming to synchronize physical mechanics with intelligent operating systems. Thanks to the collaborative spirit between the hardware builder and the software architecture team for the joint development of the operating system.
 
-Technological Pioneers: Acknowledgment of the advancements in personal flight devices and stealth aviation technology that proved the viability of vacuum-assisted propulsion.
+**Technological Pioneers:** Acknowledgment of the advancements in personal flight devices and stealth aviation technology that proved the viability of vacuum-assisted propulsion.
 
 Finally, our recognition to all the engineers, makers, garage inventors, and contemporary test pilots who have dedicated their lives, sweat, and resources to prove that individual human flight is not merely a delusion or fiction, but a purely mechanical and software engineering challenge on the verge of being overcome.
 
-❖ GENERAL INDEX
+---
 
-1.  Glossary & Technical Nomenclatures
-2.  Project Overview (Mark I to Mark II)
-3.  Physical Topology & Hardware Manifest
-4.  Hybrid Flight Dynamics — Propulsion Mechanics
-5.  Omnidirectional Energy Matrix — Energy Generation & Management
-6.  Software Architecture & Telemetry — J.A.R.V.I.S. Core
-7.  Operational Protocols & Pseudo-Code
-8.  Engineering Methodology (The Correct Approach)
-9.  Technical References & Historical Context
-10. Appendix: Comparative Power Analysis & Wireless Feasibility
+## ❖ GENERAL INDEX
+
+1.  [Glossary & Technical Nomenclatures](#1-glossary--technical-nomenclatures)
+2.  [Project Overview (Mark I to Mark II)](#2-project-overview-mark-i-to-mark-ii)
+3.  [Physical Topology: Anatomical Architecture & Hardware Placement](#3-physical-topology-anatomical-architecture--hardware-placement)
+    *   3.1. Dorsal Axis — Primary Thruster Placement (Scapular Mounts)
+    *   3.2. Costal Axis — Secondary Thruster Placement (Lateral Ribcage Mounts)
+    *   3.3. Energy Storage Units — Batteries (Lumbar Region)
+    *   3.4. Central Processing Core (Frontal Pectoral)
+    *   3.5. Thermal Insulation & Cooling Systems (ATMS)
+    *   3.6. Detailed Hardware Manifest: Armor & Equipment
+4.  [Hybrid Flight Dynamics — Propulsion Mechanics](#4-hybrid-flight-dynamics--propulsion-mechanics)
+    *   4.1. Stage 1: VTOL Liftoff — Force-Based Takeoff
+    *   4.2. Stage 2: Aerospace Cruise — Air-Breathing & Vacuum System
+    *   4.3. The Vacuum Physics Model
+    *   4.4. Thrust Vectoring
+5.  [Omnidirectional Energy Matrix — Energy Generation & Management](#5-omnidirectional-energy-matrix--energy-generation--management)
+    *   5.1. Control & Avionics Mesh — Multi-Source Energy Harvesting
+    *   5.2. Universal Compatibility Protocols & Wireless Charging
+    *   5.3. Force Mesh — Battery Redundancy & Failover Logic
+6.  [Software Architecture & Telemetry — J.A.R.V.I.S. Core](#6-software-architecture--telemetry--jarvis-core)
+    *   6.1. Bluetooth Sensor Network — Wireless Sensor Telemetry
+    *   6.2. Failsafe & Diagnostic Protocols
+    *   6.3. Helmet HUD & Augmented Reality
+    *   6.4. Detailed Software Manifest: A.I. Jarvis
+7.  [Operational Protocols & Pseudo-Code](#7-operational-protocols--pseudo-code)
+8.  [Engineering Methodology (The Correct Approach)](#8-engineering-methodology-the-correct-approach)
+9.  [Technical References & Historical Context](#9-technical-references--historical-context)
+10. [Appendix: Comparative Power Analysis & Wireless Feasibility](#10-appendix-comparative-power-analysis--wireless-feasibility)
 
 ---
 
@@ -46,8 +67,8 @@ For universal standardization of code development, 3D modeling, and physical ass
 | :--- | :--- | :--- |
 | **FCS** | Flight Control System | The digital "Brain"; the suit's central Operating System. |
 | **BLE** | Bluetooth Low Energy | Low-latency wireless network protocol for sensors. |
-| **EDF** | Electric Ducted Fan | Shrouded electric micro-turbines (the flight propulsors). High-RPM brushless DC motors housed in reinforced casings. |
-| **BMS** | Battery Management System | Intelligent electronic system for cycling, charging, and safety management. |
+| **EDF** | Electric Ducted Fan | Shrouded electric micro-turbines (the flight propulsors). |
+| **BMS** | Battery Management System | Intelligent electronic system for cycling, charging, and safety. |
 | **PMIC** | Power Management IC | Universal integrated chip that receives varied voltages and stabilizes them. |
 | **PDU** | Power Distribution Unit | Central power distribution unit accepting multiple chemistries and voltages. |
 | **ATMS** | Active Thermal Management System | Cooling and thermal insulation system (Aerogel/Airflow). |
@@ -68,58 +89,56 @@ For universal standardization of code development, 3D modeling, and physical ass
 The initial version (Mark I) of this project masterfully consolidated the engineering of functional props and cosplay: the plating, the helmet kinematics, the basic mechanical actuators, and the local operation of the central LED Reactor. The Mark I is an existing exoskeleton frame currently equipped with basic cosmetic sensors and a low-output Arc Reactor prop.
 
 ### 2.2. The Mark II Leap
-The Mark II is the leap from aesthetics to aerospace. This document serves as the comprehensive technical specification for upgrading the static exoskeleton prototype (Mark I) to a fully functional flight-capable system. The project bridges the gap between costume engineering/cosplay aesthetics and aeronautical physics, leveraging open-source hardware, software protocols, and physics principles used in modern aviation.
+The Mark II is the leap from aesthetics to aerospace. This document serves as the comprehensive technical specification for upgrading the static exoskeleton prototype (Mark I) to a fully functional flight-capable system. The project bridges the gap between costume engineering and aeronautical physics, leveraging open-source hardware and software protocols.
 
 The objective of this architecture is to integrate an Autonomous Operating System (FCS) with a sustainable electric propulsion mesh, replacing flammable fossil fuels with fluid dynamics (pressure differential/vacuum). All of this is sustained by an energy ecosystem capable of self-sustaining by extracting force from the environment.
 
 ### 2.3. Core Challenges
-1.  **Lift:** Achieving vertical takeoff without heavy combustion fuels. Overcoming gravitational inertia without fossil fuels.
-2.  **Power:** Sustaining energy for propulsion without tethering. Maintaining autonomous and sustainable energy supply.
-3.  **Control:** Developing a software interface (J.A.R.V.I.S. / FCS) for autonomous stabilization and user control.
+1.  **Lift:** Achieving vertical takeoff without heavy combustion fuels.
+2.  **Power:** Sustaining energy for propulsion without tethering.
+3.  **Control:** Developing a software interface (J.A.R.V.I.S. / FCS) for autonomous stabilization.
 
 ### 2.4. Proposed Solution
-A hybrid propulsion system utilizing **Electric Ducted Fans (EDF)** enhanced by **Vacuum-Compression Dynamics** (similar to modern stealth jet intakes), powered by a redundant 4-cell battery system supplemented by multi-source energy harvesting (Solar, Kinetic, Atmospheric). The Arc Reactor unit transitions from a cosmetic prop to housing the FCS mainboard and PMIC.
+A hybrid propulsion system utilizing **Electric Ducted Fans (EDF)** enhanced by **Vacuum-Compression Dynamics** (similar to modern stealth jet intakes), powered by a redundant 4-cell battery system supplemented by multi-source energy harvesting (Solar, Kinetic, Atmospheric).
 
 ---
 
-## 3. PHYSICAL TOPOLOGY & HARDWARE MANIFEST
+## 3. PHYSICAL TOPOLOGY: ANATOMICAL ARCHITECTURE & HARDWARE PLACEMENT
 
-The millimetric positioning of each component is vital for the Center of Gravity (CoG). This section details the precise physical location of hardware components relative to human anatomy to ensure CoG stability and pilot safety, followed by the complete Real-World Hardware Manifest.
+The millimetric positioning of each component is vital for the Center of Gravity (CoG). This section details the precise physical location of hardware components relative to human anatomy to ensure CoG stability and pilot safety.
 
-### 3.1. Dorsal Axis (Scapular Mounts) — Primary Sustentation Axis / Primary Thrusters
-*   **Location:** Upper back. Posterior thorax, specifically inferior to the cervical spine (neck) and medial to the scapulae (shoulder blades). This aligns with the anatomical region of the **Trapezius** and **Latissimus Dorsi** muscles to distribute weight.
-*   **Function:** Provides 75% of the lift force. Primary Vertical Take-Off and Landing (VTOL).
-*   **Specification:** The propulsion system utilizes a hybrid-vacuum turbine design. High-RPM Electric Ducted Fans (EDF) housed in reinforced casings.
-*   **Motors (Primary Propulsors):**
-    *   **M1 (Left Dorsal EDF / Port):** Fixed over the left scapula. Angulation: 15° tilted outward (directing the exhaust jet away from the pilot's legs).
-    *   **M2 (Right Dorsal EDF / Starboard):** Fixed over the right scapula. Angulation: 15° mirrored outward.
-*   **Primary Batteries (Active Cells):**
-    *   **Cell A:** Positioned exactly 5cm below Motor M1, housed in the upper-left lumbar region.
-    *   **Cell B:** Positioned exactly 5cm below Motor M2, in the upper-right lumbar region.
-*   **Air Intakes (Frontal Ducts):** Openings on the frontal shoulders (trapezius region) designed to swallow air and channel it to the back. The intake geometry creates a low-pressure zone (partial vacuum) ahead of the engine, accelerating airflow.
+### 3.1. Dorsal Axis (Scapular Mounts) — Primary Sustentation Axis
+**Location:** Upper back. Posterior thorax, specifically inferior to the cervical spine (neck) and medial to the scapulae (shoulder blades). This aligns with the anatomical region of the **Trapezius** and **Latissimus Dorsi** muscles.
+**Function:** Provides 75% of the lift force. Primary Vertical Take-Off and Landing (VTOL).
+**Motors (Primary Propulsors):**
+*   **M1 (Left Dorsal EDF):** Fixed over the left scapula. Angulation: 15° tilted outward (directing exhaust away from legs).
+*   **M2 (Right Dorsal EDF):** Fixed over the right scapula. Angulation: 15° mirrored outward.
+**Primary Batteries (Active Cells):**
+*   **Cell A:** Positioned exactly 5cm below Motor M1, housed in the upper-left lumbar region.
+*   **Cell B:** Positioned exactly 5cm below Motor M2, in the upper-right lumbar region.
+**Air Intakes (Frontal Ducts):** Openings on the frontal shoulders (trapezius region) designed to swallow air and channel it to the back.
 
-### 3.2. Costal Axis (Lateral Ribcage Mounts) — Stabilization Axis / Secondary Thrusters
-*   **Location:** Sides of the torso. Fixed bilaterally to the lower rib cage (intercostal spaces), specifically over the **External Intercostal** muscles, approximating the lower floating ribs (11th and 12th ribs). Replaces hand-mounted propulsors, freeing the pilot's arms for HUD control and emergencies.
-*   **Function:** Stabilization, roll correction, forward momentum augmentation, and secondary lift.
-*   **Motors (Directional Propulsors):**
-    *   **M3 (Left Costal EDF / Port):** Fixed at the line of the left floating ribs. Coupled to a 2-dimensional gimbal axis controlled by the FCS.
-    *   **M4 (Right Costal EDF / Starboard):** Fixed at the line of the right floating ribs, mirrored to M3.
-*   **Reserve Batteries (Hot-Standby):**
-    *   **Cell C:** Positioned above Motor M3, hidden inside the left lateral chest armor.
-    *   **Cell D:** Positioned above Motor M4, in the right lateral chest armor.
+### 3.2. Costal Axis (Lateral Ribcage Mounts) — Stabilization Axis
+**Location:** Sides of the torso. Bilateral placement along the lower rib cage (intercostal spaces), specifically near the floating ribs (11th and 12th ribs).
+**Function:** Stabilization, roll correction, forward momentum augmentation.
+**Motors (Directional Propulsors):**
+*   **M3 (Left Costal EDF):** Fixed at the line of the left floating ribs. Coupled to a 2-dimensional gimbal axis controlled by the FCS.
+*   **M4 (Right Costal EDF):** Fixed at the line of the right floating ribs, mirrored to M3.
+**Reserve Batteries (Hot-Standby):**
+*   **Cell C:** Positioned above Motor M3, hidden inside the left lateral chest armor.
+*   **Cell D:** Positioned above Motor M4, in the right lateral chest armor.
 
 ### 3.3. Energy Storage Units (Batteries) — Detailed Configuration
-Batteries constitute the heaviest component. Positioning them incorrectly will shift the CoG and cause instability.
-*   **Placement:** Lumbar Region (Lower Back/Waist) for primary cells (A & B), Lateral Pectoral Armor for reserve cells (C & D).
-*   **Configuration:** 4 High-Density Li-Po Batteries arranged in a "Saddlebag" configuration. Two active (A & B), two reserve (C & D). This places the mass near the pilot's natural center of gravity (hips), preventing the suit from tipping.
-*   **Universal Battery Adapter:** The PDU accepts multiple chemistries and voltages, allowing "hot-swapping" scavenged batteries.
+**Placement:** Lumbar Region (Lower Back/Waist) for primary cells (A & B), Lateral Pectoral Armor for reserve cells (C & D).
+**Configuration:** 4 High-Density Li-Po Batteries arranged in a "Saddlebag" configuration. Two active (A & B), two reserve (C & D).
+**Universal Battery Adapter:** The PDU accepts multiple chemistries (LiPo, Li-Ion, Alkaline) and voltages, allowing "hot-swapping" scavenged batteries.
 
 ### 3.4. Central Processing Core (Frontal Pectoral)
 The frontal Central Reactor houses the main motherboard (FCS) and the PMIC. Strategic position for frontal cooling and proximity to the helmet's BLE network.
 
 ### 3.5. Thermal Insulation & Cooling Systems (ATMS)
-*   **Insulation Layer:** Ceramic fiber or aerogel thermal linings installed between the turbine housings and the pilot's body.
-*   **Active Cooling:** Integration of heat sinks and liquid cooling loops (water blocks) running along the spine and chest, utilizing the vacuum airflow from the turbines to dissipate heat.
+**Insulation Layer:** Ceramic fiber or aerogel thermal linings installed between the turbine housings and the pilot's body.
+**Active Cooling:** Integration of heat sinks and liquid cooling loops (water blocks) running along the spine and chest, utilizing the vacuum airflow from the turbines to dissipate heat.
 
 ### 3.6. DETAILED HARDWARE MANIFEST: ARMOR & EQUIPMENT
 Real nomenclatures and cutting-edge equipment for the construction of the carapace, onboard electronics, sensors, and actuators for the Mark II.
@@ -191,45 +210,44 @@ Real nomenclatures and cutting-edge equipment for the construction of the carapa
 Inspired by the propulsion of fifth-generation stealth jets, the armor utilizes distinct aerodynamic stages. This project adapts **Air-Augmented Propulsion** (Air-Auger Vacuum Systems) to compress incoming air without moving parts, increasing thrust efficiency.
 
 ### 4.1. Stage 1: VTOL Liftoff — Force-Based Takeoff (Ignition Phase)
-*   **Applied Physics:** Overcoming inertia from rest requires brute electro-mechanical force. Electrical energy initiates the turbines at maximum torque.
-*   **Active Mechanics:** Motors M1 through M4 drain maximum amperage from Cells A and B. The rotation creates a zone of extreme low pressure (vacuum) at the top of the air intakes, sucking in oxygen and expelling it downward, guaranteeing vertical elevation.
+**Applied Physics:** Overcoming inertia from rest requires brute electro-mechanical force. Electrical energy initiates the turbines at maximum torque.
+**Active Mechanics:** Motors M1 through M4 drain maximum amperage from Cells A and B. The rotation creates a zone of extreme low pressure (vacuum) at the top of the air intakes, sucking in oxygen and expelling it downward, guaranteeing vertical elevation.
 
 ### 4.2. Stage 2: Aerospace Cruise — Air-Breathing & Vacuum System
-*   **Applied Physics:** Using relative wind and displacement to generate passive thrust. By creating a low-pressure zone (partial vacuum) in front of the intake, atmospheric pressure forces air into the turbine at higher velocities.
-*   **Active Mechanics:** When at horizontal speed, the Ram-Air system (impact vacuum) is activated. Air is naturally "punched" into the ducts, relieving the electrical effort on the EDF motors. The motors are not just "pushing" air out; the intake design passively sucks air in.
-*   **Thermal Recovery & RAT:** The frontal wind cools the Aerogel layers (ATMS). Excess air passes through internal micro-turbines (RAT), transforming the flight wind back into electrical energy.
+**Applied Physics:** Using relative wind and displacement to generate passive thrust. By creating a low-pressure zone (partial vacuum) in front of the intake, atmospheric pressure forces air into the turbine at higher velocities.
+**Active Mechanics:** When at horizontal speed, the Ram-Air system (impact vacuum) is activated. Air is naturally "punched" into the ducts, relieving the electrical effort on the EDF motors.
+**Thermal Recovery & RAT:** The frontal wind cools the Aerogel layers (ATMS). Excess air passes through internal micro-turbines (RAT), transforming the flight wind back into electrical energy.
 
 ### 4.3. The Vacuum Physics Model
-*   **Concept:** Unlike traditional rockets, this system utilizes the surrounding atmosphere.
-*   **Operational Logic:** Phase 1 (Ignition) uses electrical energy. Phase 2 (Vacuum Engagement) uses intake geometry to compress airflow without mechanical pistons.
-*   **Efficiency Ratio:** The system aims for a 50/50 split — 50% of the lift generated by motor torque, 50% by atmospheric vacuum pressure differential, allowing for smaller batteries and longer flight times.
+**Concept:** Unlike traditional rockets, this system utilizes the surrounding atmosphere.
+**Efficiency Ratio:** The system aims for a 50/50 split — 50% of the lift generated by motor torque, 50% by atmospheric vacuum pressure differential.
 
 ### 4.4. Thrust Vectoring
 The turbines (M3 & M4) are mounted on gimbaled rings (2-dimensional axes) controlled by the FCS.
 *   **Vertical Flight:** Intakes face up/down to maximize vacuum lift.
-*   **Horizontal Flight:** Intakes rotate to create forward thrust. Real-time adjustments for pitch, roll, and yaw control.
+*   **Horizontal Flight:** Intakes rotate to create forward thrust.
 
 ---
 
 ## 5. OMNIDIRECTIONAL ENERGY MATRIX — ENERGY GENERATION & MANAGEMENT
 
-The suit interacts with intelligent urban environments (Smart Cities), utilizing a "Hybrid-Harvesting" approach to extend operational duration. The Arc Reactor upgrade transitions into a multi-source power grid.
+The suit interacts with intelligent urban environments (Smart Cities), utilizing a "Hybrid-Harvesting" approach to extend operational duration.
 
 ### 5.1. Control & Avionics Mesh — Multi-Source Energy Harvesting
 To sustain flight and recharge reserves, the suit integrates multiple modalities:
-1.  **Piezoelectric Kinetic Harvesters:** Impact sensors in the boots and joint articulations compress piezo crystals during walking, generating voltage spikes stored in buffer capacitors. Based on technologies currently deployed in advanced footwear research (Japan).
+1.  **Piezoelectric Kinetic Harvesters:** Impact sensors in the boots and joint articulations compress piezo crystals during walking, generating voltage spikes stored in buffer capacitors.
 2.  **Micro-Solar Photovoltaic Layer:** Flexible solar cells/arrays integrated into the armor plating (shoulders and thighs) harvest energy during daylight flight.
-3.  **Atmospheric Resonant Capture:** A miniaturized high-voltage antenna array (inspired by Tesla Tower concepts) capable of capturing ambient RF energy and static electrical potential from the environment to trickle-charge standby systems.
+3.  **Atmospheric Resonant Capture:** A miniaturized high-voltage antenna array (inspired by Tesla Tower concepts) capable of capturing ambient RF energy and static electrical potential.
 
 ### 5.2. Universal Compatibility Protocols & Wireless Charging
-*   **Reverse WPT (Qi Standard Integration):** Qi induction coil on the chest plate. Compatible with standard Qi charging pads and "City Recharge Stations". Placing a compatible smartphone against the suit transfers energy to reactivate the onboard computer.
-*   **Device-to-Suit Transfer:** The suit can share power with or receive power from external devices via bilateral wireless transfer protocols.
+**Reverse WPT (Qi Standard Integration):** Qi induction coil on the chest plate. Compatible with standard Qi charging pads and "City Recharge Stations".
+**Device-to-Suit Transfer:** The suit can share power with or receive power from external devices via bilateral wireless transfer protocols.
 
 ### 5.3. Force Mesh — Battery Redundancy & Failover Logic
 The software strictly manages the 4-battery array:
-*   **Takeoff (Active):** Batteries A and B (Back) operate at 100%. Batteries C and D (Ribs) remain inert on Standby.
+*   **Takeoff (Active):** Batteries A and B operate at 100%. Batteries C and D remain inert on Standby.
 *   **Cruise (Regeneration Phase):** Clean energy captured by solar/RAT is routed to trickle-charge C and D mid-flight.
-*   **Switch-Over (Auto-Switching):** When A and B reach 15%, the BMS disengages them and activates C and D instantaneously without power interruption. The system then attempts to recharge A and B. The cycle perpetuates.
+*   **Switch-Over (Auto-Switching):** When A and B reach 15%, the BMS disengages them and activates C and D instantaneously without power interruption.
 
 ---
 
@@ -411,9 +429,9 @@ The architectural viability presented in this Whitepaper is an extrapolation bas
 *   **Fault-Tolerant Powertrain Control:** Electronic management logic, systems redundancy, sensor watchdogs, and active safety protocols standardized in the sports/luxury automotive sector (e.g., embedded architecture by the BMW Group).
 *   **Fly-by-Wire Systems:** Development of computer-stabilized control systems that allow computers to stabilize inherently unstable aircraft.
 
-### 9.4. Historical References & Open Technologies
+### 9.4. Historical References
 *   **Nikola Tesla:** For the theoretical framework of wireless energy and atmospheric potential.
-*   **Open Technologies Utilized:** EDF Technology, Air-Augmented Propulsion, Piezoelectric Effect, Inductive Coupling, MEMS Sensors.
+*   **Aviation Pioneers:** For the development of the "Fly-by-Wire" systems that allow computers to stabilize unstable aircraft.
 
 ---
 
